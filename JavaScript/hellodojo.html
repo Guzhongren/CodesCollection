@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="http://localHost/arcgis_js_v38_sdk/arcgis_js_api/library/3.8/3.8/js/dojo/dojo/dojo.js"></script>
+</head>
+<body>
+    <h1 id="greeting">Hello</h1>
+
+<script type="text/javascript">
+    var dojoConfig={
+        async:true,
+        packages:[{name:"dojo_define",
+            location:location.pathname.replace(/\/[^/]*$/, '')+ '/dojo_define'
+        }]
+
+    };
+</script>
+<script type="text/javascript">
+    require(["dojo_define/my"],function(my){
+        my.settext("greeting",'hello dojo');
+        setTimeout(function(){
+            my.restorText('greeting');
+        },3000);
+    })
+
+</script>
+</body>
+</html>

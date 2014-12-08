@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="http://localHost/arcgis_js_v38_sdk/arcgis_js_api/library/3.8/3.8/js/dojo/dojo/dojo.js"></script>
+
+    <script type="text/javascript">
+        require([
+            'dojo/dom',
+             'dojo/fx',
+            'dojo/domReady!'
+        ], function (dom,fx) {
+            var greeting = dom.byId('greeting');
+            greeting.innerHTML += ' <i>from Dojo!</i>';
+
+            fx.slider({
+                node:greeting,
+                top:100,
+                left:200
+            }).play();
+
+
+        });
+
+    </script>
+</head>
+<body>
+<h1 id="greeting">Hello </h1>
+
+</body>
+</html>

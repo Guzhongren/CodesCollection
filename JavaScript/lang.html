@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <lin rel="stylesheet" href="http://localHost/arcgis_js_v38_sdk/arcgis_js_api/library/3.8/3.8/js/dojo/dijit/themes/claro/claro.css"></lin>
+    <script type="text/javascript" src="http://localHost/arcgis_js_v38_sdk/arcgis_js_api/library/3.8/3.8/js/dojo/dojo/dojo.js"></script>
+    <script>dojoConfig = {parseOnLoad: true}</script>
+
+    <script>
+        require(["dojo/_base/lang","dojo/dom","dojo/dom-construct","dojo/_base/array","dojo/on","dojo/domReady!"],
+                function(lang,dom,dom_construct,array,on){
+            var myObj = {
+                foo: "bar",
+                method:function(arg,agr){
+                    console.log(arg+" "+agr+" "+this.foo);
+                }
+            };
+            var cls=function(arg,arg2){
+                dom_construct.place("<p>" + arg + "</p>","appendLocation");
+                dom_construct.place("</br>","appendLocation");
+            };
+            on(dom.byId("myButton"),"click",lang.partial(cls,"第一个参数"))
+            var func = lang.hitch(myObj, "method","baz","zab");
+            ///两种方式替换
+            //文本形式替换
+            dom.byId("divHello").innerHTML+=lang.replace("Hello,{name.first} {name.last} AKA  {nick}",{
+                        name:{
+                            first:"gu",
+                            middle:"X",
+                            last:"zhongren"},
+                        nick:"nickss" }
+            );
+            //数组形式替换
+            dom.byId("domArray").innerHTML+=lang.replace("Hello,{0} {1} AKA {2}",["gu","zhongren","nick"]);
+            dom.byId("divCal").innerHTML=lang.replace("{count} payments averaging {avg} USD per payment ",
+                    lang.hitch(
+                        {payment: [11, 16, 12]},
+                        function(_,key){
+                            switch(key){
+                                case "count":return this.payment.length;
+                                case "sum":return sum(this.payment);
+                                case "min":return Math.min(this.payment);
+                                case "max":return Math.max(this.payment);
+                                case "avg":return sum(this.payment)/this.payment.length;
+                            }
+                        }
+                    )
+            );
+            //用dojo的方式来计算数组的sum
+            function sum(a){
+                var t=0;
+                array.forEach(a,function(x){
+                    t+=x;
+                });
+                return t;
+            }
+
+        });
+
+    </script>
+</head>
+<body class="claro">
+<button type="button" id="myButton">Click me to append in a preset value!</button>
+<div id="appendLocation"></div>
+<button id="hello" content="点击显示"></button>
+<div id="divHello" ></div>
+<div id="domArray"></div>
+<div id="divCal"></div>
+<form data-dojo-type="dojo/dijit/Form">
+    <table>
+        <tbody>
+            <tr>
+                <td><lable for="userName"></lable></td>
+                <td><input type="text" name="userName" data-dojo-type="dijit/form/TextBox"/> </td>
+            </tr>
+        </tbody>
+
+    </table>
+
+</form>
+
+</body>
+</html>

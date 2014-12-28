@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <ul id="list">
+        <li id="one">one</li>
+        <li id="two">two</li>
+        <li id="three">three</li>
+        <li id="four">four</li>
+        <li id="five">five</li>
+
+    </ul>
+
+    <button id="moveFirst">The first item</button>
+    <button id="moveBeforeTwo">Before Two</button>
+    <button id="moveAfterFour">After Four</button>
+    <button id="moveLast">The last item</button>
+
+    <button id="destroyFirst">Destroy the first list item</button>
+    <button id="destroyAll">Destroy all list items</button>
+    
+    <!--//module中的button-->
+    <button id="btnModule"
+            data-dojo-type="dijit/form/Buttom" data-dojo-props="id=btnModule"
+            >测试按钮</button>
+
+    <script type="text/javascript">
+        var dojoConfig={
+            baseUrl:"./",
+            tlmSiblingOfDojo:false,
+            packages:[
+                {name:"dijit",location:"js/lib/dijit"},
+                {name:"dojo",location:"js/lib/dojo"},
+                {name:"nls",location:"my/nls"},
+                {name:'Button',location:'Button'}
+            ]
+        };
+
+    </script>
+    <script src="js/lib/dojo/dojo.js" data-dojo-config="isdebug:true, async:true"></script>
+    <script>
+        require(['dojo/dom', 
+            'nls/common',
+            'Button/button',
+            'dojo/on',
+            'dojo/parser',
+            'dojo/domReady!'],function(dom,common,Button,on){
+            setText("one","one has been setted");
+            setText("two","two hai been setted");
+
+            function setText(id,text)
+            {
+                var node=dom.byId(id);
+                node.innerHTML=text;
+            }
+            //测试button.js
+
+            var btnModele=dom.byId('btnModule');
+
+            on(btnModele,'click',function(){
+                var btn=new Button();
+                btn._firstClicked=true;
+
+            });
+
+        });
+    </script>
+    <script type="text/javascript">
+    require(['dojo/dom',
+                'dojo/dom-construct',
+                'dojo/domReady!'],
+            function(dom,domConstruct){
+                var list=dom.byId("list");
+                three=dom.byId("three");
+                //创建一个li标签，内容为six,
+                domConstruct.create("li",{innerHTML:"six"},list);
+                //创建一个带样式的li标签
+                domConstruct.create("li",{innerHTML:"Seven",
+                                          className:"Seven",
+                style:{fontWeight:"bold"}},list);
+                //在第三个li标签后添加一个li标签
+                domConstruct.create("li",{innerHTML:"3.5"},three,"after")
+            })
+</script>
+    <script type="text/javascript">
+    require(['dojo/dom','dojo/dom-construct','dojo/on','dojo/domReady!'],
+            function(dom,domConstruct,on){
+                //将第三个元素移动到list的前面
+                function moveFirst(){
+                    var list=dom.byId('list');
+                        three=dom.byId('three');
+                    domConstruct.place(three,list,"first");
+                }
+
+                function moveBeforeTwo(){
+                    var two=dom.byId("two");
+                        three=dom.byId('three');
+                    domConstruct.place(three,two,"before");
+                }
+                function moveAfterFour(){
+                    var four=dom.byId('four');
+                        three=dom.byId('three');
+                    domConstruct.place(three,four,"after");
+                }
+                function moveLast(){
+                    var list=dom.byId('list');
+                        three=dom.byId('three');
+                    domConstruct.place(three,list);
+                }
+                //为每个按钮注册事件
+                on(dom.byId("moveFirst"),"click",moveFirst);
+                on(dom.byId("moveBeforeTwo"),"click",moveBeforeTwo);
+                on(dom.byId("moveAfterFour"),"click",moveAfterFour);
+                on(dom.byId("moveLast"),"click",moveLast);
+
+                function destroyFirst(){
+                    var list=dom.byId("list");
+                        items=list.getElementsByTagName('li');
+                    if(items.length){
+                        domConstruct.destroy(items[0]);
+                    }
+                }
+                function destoryAll(){
+                    domConstruct.destroy("list");
+                }
+                on(dom.byId("destroyFirst"),"click",destroyFirst);
+                on(dom.byId("destroyAll"),'click',destoryAll);
+            }
+    )
+
+</script>
+
+</body>
+</html>

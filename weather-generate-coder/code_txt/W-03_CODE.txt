@@ -1,0 +1,773 @@
+switch(value) {
+case 0:
+    color = new Color(56, 23, 23, 255);
+    break;
+case 1:
+    color = new Color(57, 23, 23, 255);
+    break;
+case 2:
+    color = new Color(57, 24, 24, 255);
+    break;
+case 3:
+    color = new Color(58, 24, 24, 255);
+    break;
+case 4:
+    color = new Color(59, 24, 24, 255);
+    break;
+case 5:
+    color = new Color(59, 25, 25, 255);
+    break;
+case 6:
+    color = new Color(60, 25, 25, 255);
+    break;
+case 7:
+    color = new Color(61, 25, 25, 255);
+    break;
+case 8:
+    color = new Color(61, 26, 26, 255);
+    break;
+case 9:
+    color = new Color(62, 26, 26, 255);
+    break;
+case 10:
+    color = new Color(63, 26, 26, 255);
+    break;
+case 11:
+    color = new Color(63, 27, 27, 255);
+    break;
+case 12:
+    color = new Color(64, 27, 27, 255);
+    break;
+case 13:
+    color = new Color(65, 27, 27, 255);
+    break;
+case 14:
+    color = new Color(65, 28, 28, 255);
+    break;
+case 15:
+    color = new Color(66, 28, 28, 255);
+    break;
+case 16:
+    color = new Color(67, 28, 28, 255);
+    break;
+case 17:
+    color = new Color(67, 29, 29, 255);
+    break;
+case 18:
+    color = new Color(69, 30, 30, 255);
+    break;
+case 19:
+    color = new Color(69, 47, 24, 255);
+    break;
+case 20:
+    color = new Color(70, 47, 24, 255);
+    break;
+case 21:
+    color = new Color(72, 47, 24, 255);
+    break;
+case 22:
+    color = new Color(73, 47, 24, 255);
+    break;
+case 23:
+    color = new Color(75, 47, 24, 255);
+    break;
+case 24:
+    color = new Color(76, 47, 25, 255);
+    break;
+case 25:
+    color = new Color(78, 47, 25, 255);
+    break;
+case 26:
+    color = new Color(79, 48, 25, 255);
+    break;
+case 27:
+    color = new Color(81, 48, 25, 255);
+    break;
+case 28:
+    color = new Color(82, 48, 25, 255);
+    break;
+case 29:
+    color = new Color(69, 47, 24, 255);
+    break;
+case 30:
+    color = new Color(70, 47, 24, 255);
+    break;
+case 31:
+    color = new Color(71, 48, 24, 255);
+    break;
+case 32:
+    color = new Color(72, 48, 24, 255);
+    break;
+case 33:
+    color = new Color(73, 49, 24, 255);
+    break;
+case 34:
+    color = new Color(74, 50, 24, 255);
+    break;
+case 35:
+    color = new Color(75, 50, 25, 255);
+    break;
+case 36:
+    color = new Color(76, 51, 25, 255);
+    break;
+case 37:
+    color = new Color(77, 52, 25, 255);
+    break;
+case 38:
+    color = new Color(78, 52, 25, 255);
+    break;
+case 39:
+    color = new Color(103, 50, 34, 255);
+    break;
+case 40:
+    color = new Color(103, 50, 34, 255);
+    break;
+case 41:
+    color = new Color(104, 50, 34, 255);
+    break;
+case 42:
+    color = new Color(105, 50, 34, 255);
+    break;
+case 43:
+    color = new Color(106, 50, 34, 255);
+    break;
+case 44:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 45:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 46:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 47:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 48:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 49:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 50:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 51:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 52:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 53:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 54:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 55:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 56:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 57:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 58:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 59:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 60:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 61:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 62:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 63:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 64:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 65:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 66:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 67:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 68:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 69:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 70:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 71:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 72:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 73:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 74:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 75:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 76:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 77:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 78:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 79:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 80:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 81:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 82:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 83:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 84:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 85:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 86:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 87:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 88:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 89:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 90:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 91:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 92:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 93:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 94:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 95:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 96:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 97:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 98:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 99:
+    color = new Color(150, 28, 28, 255);
+    break;
+case 100:
+    color = new Color(150, 29, 29, 255);
+    break;
+case 101:
+    color = new Color(151, 31, 31, 255);
+    break;
+case 102:
+    color = new Color(152, 33, 33, 255);
+    break;
+case 103:
+    color = new Color(153, 35, 35, 255);
+    break;
+case 104:
+    color = new Color(154, 37, 37, 255);
+    break;
+case 105:
+    color = new Color(154, 39, 39, 255);
+    break;
+case 106:
+    color = new Color(155, 40, 40, 255);
+    break;
+case 107:
+    color = new Color(156, 42, 42, 255);
+    break;
+case 108:
+    color = new Color(157, 44, 44, 255);
+    break;
+case 109:
+    color = new Color(158, 46, 46, 255);
+    break;
+case 110:
+    color = new Color(158, 48, 48, 255);
+    break;
+case 111:
+    color = new Color(159, 50, 50, 255);
+    break;
+case 112:
+    color = new Color(160, 51, 51, 255);
+    break;
+case 113:
+    color = new Color(161, 53, 53, 255);
+    break;
+case 114:
+    color = new Color(162, 55, 55, 255);
+    break;
+case 115:
+    color = new Color(162, 57, 57, 255);
+    break;
+case 116:
+    color = new Color(163, 59, 59, 255);
+    break;
+case 117:
+    color = new Color(164, 61, 61, 255);
+    break;
+case 118:
+    color = new Color(165, 62, 62, 255);
+    break;
+case 119:
+    color = new Color(166, 64, 64, 255);
+    break;
+case 120:
+    color = new Color(166, 66, 66, 255);
+    break;
+case 121:
+    color = new Color(167, 68, 68, 255);
+    break;
+case 122:
+    color = new Color(168, 70, 70, 255);
+    break;
+case 123:
+    color = new Color(169, 72, 72, 255);
+    break;
+case 124:
+    color = new Color(170, 73, 73, 255);
+    break;
+case 125:
+    color = new Color(170, 75, 75, 255);
+    break;
+case 126:
+    color = new Color(171, 77, 77, 255);
+    break;
+case 127:
+    color = new Color(172, 79, 79, 255);
+    break;
+case 128:
+    color = new Color(173, 81, 81, 255);
+    break;
+case 129:
+    color = new Color(174, 83, 83, 255);
+    break;
+case 130:
+    color = new Color(174, 85, 85, 255);
+    break;
+case 131:
+    color = new Color(175, 86, 86, 255);
+    break;
+case 132:
+    color = new Color(176, 88, 88, 255);
+    break;
+case 133:
+    color = new Color(177, 90, 90, 255);
+    break;
+case 134:
+    color = new Color(178, 92, 92, 255);
+    break;
+case 135:
+    color = new Color(178, 94, 94, 255);
+    break;
+case 136:
+    color = new Color(179, 96, 96, 255);
+    break;
+case 137:
+    color = new Color(180, 97, 97, 255);
+    break;
+case 138:
+    color = new Color(181, 99, 99, 255);
+    break;
+case 139:
+    color = new Color(182, 101, 101, 255);
+    break;
+case 140:
+    color = new Color(183, 103, 103, 255);
+    break;
+case 141:
+    color = new Color(183, 105, 105, 255);
+    break;
+case 142:
+    color = new Color(184, 107, 107, 255);
+    break;
+case 143:
+    color = new Color(185, 108, 108, 255);
+    break;
+case 144:
+    color = new Color(186, 110, 110, 255);
+    break;
+case 145:
+    color = new Color(187, 112, 112, 255);
+    break;
+case 146:
+    color = new Color(187, 114, 114, 255);
+    break;
+case 147:
+    color = new Color(188, 116, 116, 255);
+    break;
+case 148:
+    color = new Color(189, 118, 118, 255);
+    break;
+case 149:
+    color = new Color(190, 119, 119, 255);
+    break;
+case 150:
+    color = new Color(191, 121, 121, 255);
+    break;
+case 151:
+    color = new Color(191, 123, 123, 255);
+    break;
+case 152:
+    color = new Color(192, 125, 125, 255);
+    break;
+case 153:
+    color = new Color(193, 127, 127, 255);
+    break;
+case 154:
+    color = new Color(194, 129, 129, 255);
+    break;
+case 155:
+    color = new Color(195, 130, 130, 255);
+    break;
+case 156:
+    color = new Color(195, 132, 132, 255);
+    break;
+case 157:
+    color = new Color(196, 134, 134, 255);
+    break;
+case 158:
+    color = new Color(197, 136, 136, 255);
+    break;
+case 159:
+    color = new Color(198, 138, 138, 255);
+    break;
+case 160:
+    color = new Color(199, 140, 140, 255);
+    break;
+case 161:
+    color = new Color(199, 142, 142, 255);
+    break;
+case 162:
+    color = new Color(200, 143, 143, 255);
+    break;
+case 163:
+    color = new Color(201, 145, 145, 255);
+    break;
+case 164:
+    color = new Color(202, 147, 147, 255);
+    break;
+case 165:
+    color = new Color(203, 149, 149, 255);
+    break;
+case 166:
+    color = new Color(203, 151, 151, 255);
+    break;
+case 167:
+    color = new Color(204, 153, 153, 255);
+    break;
+case 168:
+    color = new Color(205, 154, 154, 255);
+    break;
+case 169:
+    color = new Color(206, 156, 156, 255);
+    break;
+case 170:
+    color = new Color(207, 158, 158, 255);
+    break;
+case 171:
+    color = new Color(207, 160, 160, 255);
+    break;
+case 172:
+    color = new Color(208, 162, 162, 255);
+    break;
+case 173:
+    color = new Color(209, 164, 164, 255);
+    break;
+case 174:
+    color = new Color(210, 165, 165, 255);
+    break;
+case 175:
+    color = new Color(211, 167, 167, 255);
+    break;
+case 176:
+    color = new Color(211, 169, 169, 255);
+    break;
+case 177:
+    color = new Color(212, 171, 171, 255);
+    break;
+case 178:
+    color = new Color(213, 173, 173, 255);
+    break;
+case 179:
+    color = new Color(214, 175, 175, 255);
+    break;
+case 180:
+    color = new Color(215, 176, 176, 255);
+    break;
+case 181:
+    color = new Color(216, 178, 178, 255);
+    break;
+case 182:
+    color = new Color(216, 180, 180, 255);
+    break;
+case 183:
+    color = new Color(217, 182, 182, 255);
+    break;
+case 184:
+    color = new Color(218, 184, 184, 255);
+    break;
+case 185:
+    color = new Color(219, 186, 186, 255);
+    break;
+case 186:
+    color = new Color(220, 187, 187, 255);
+    break;
+case 187:
+    color = new Color(220, 189, 189, 255);
+    break;
+case 188:
+    color = new Color(221, 191, 191, 255);
+    break;
+case 189:
+    color = new Color(222, 193, 193, 255);
+    break;
+case 190:
+    color = new Color(223, 195, 195, 255);
+    break;
+case 191:
+    color = new Color(224, 197, 197, 255);
+    break;
+case 192:
+    color = new Color(224, 199, 199, 255);
+    break;
+case 193:
+    color = new Color(225, 200, 200, 255);
+    break;
+case 194:
+    color = new Color(226, 202, 202, 255);
+    break;
+case 195:
+    color = new Color(227, 204, 204, 255);
+    break;
+case 196:
+    color = new Color(228, 206, 206, 255);
+    break;
+case 197:
+    color = new Color(228, 208, 208, 255);
+    break;
+case 198:
+    color = new Color(244, 231, 173, 255);
+    break;
+case 199:
+    color = new Color(244, 231, 173, 255);
+    break;
+case 200:
+    color = new Color(244, 231, 173, 255);
+    break;
+case 201:
+    color = new Color(244, 231, 173, 255);
+    break;
+case 202:
+    color = new Color(244, 231, 173, 255);
+    break;
+case 203:
+    color = new Color(244, 231, 173, 255);
+    break;
+case 204:
+    color = new Color(244, 231, 173, 255);
+    break;
+case 205:
+    color = new Color(244, 231, 173, 255);
+    break;
+case 206:
+    color = new Color(244, 231, 173, 255);
+    break;
+case 207:
+    color = new Color(244, 231, 173, 255);
+    break;
+case 208:
+    color = new Color(244, 231, 173, 255);
+    break;
+case 209:
+    color = new Color(244, 231, 173, 255);
+    break;
+case 210:
+    color = new Color(244, 231, 173, 255);
+    break;
+case 211:
+    color = new Color(244, 231, 173, 255);
+    break;
+case 212:
+    color = new Color(244, 231, 173, 255);
+    break;
+case 213:
+    color = new Color(244, 231, 173, 255);
+    break;
+case 214:
+    color = new Color(244, 231, 173, 255);
+    break;
+case 215:
+    color = new Color(244, 231, 173, 255);
+    break;
+case 216:
+    color = new Color(157, 131, 230, 255);
+    break;
+case 217:
+    color = new Color(157, 131, 230, 255);
+    break;
+case 218:
+    color = new Color(157, 131, 230, 255);
+    break;
+case 219:
+    color = new Color(157, 131, 230, 255);
+    break;
+case 220:
+    color = new Color(157, 131, 230, 255);
+    break;
+case 221:
+    color = new Color(157, 131, 230, 255);
+    break;
+case 222:
+    color = new Color(157, 131, 230, 255);
+    break;
+case 223:
+    color = new Color(142, 216, 237, 255);
+    break;
+case 224:
+    color = new Color(142, 216, 237, 255);
+    break;
+case 225:
+    color = new Color(142, 216, 237, 255);
+    break;
+case 226:
+    color = new Color(142, 216, 237, 255);
+    break;
+case 227:
+    color = new Color(142, 216, 237, 255);
+    break;
+case 228:
+    color = new Color(142, 216, 237, 255);
+    break;
+case 229:
+    color = new Color(13, 12, 245, 255);
+    break;
+case 230:
+    color = new Color(13, 12, 245, 255);
+    break;
+case 231:
+    color = new Color(13, 12, 245, 255);
+    break;
+case 232:
+    color = new Color(13, 12, 245, 255);
+    break;
+case 233:
+    color = new Color(13, 12, 245, 255);
+    break;
+case 234:
+    color = new Color(13, 12, 245, 255);
+    break;
+case 235:
+    color = new Color(13, 12, 245, 255);
+    break;
+case 236:
+    color = new Color(13, 12, 245, 255);
+    break;
+case 237:
+    color = new Color(13, 12, 245, 255);
+    break;
+case 238:
+    color = new Color(0, 0, 0, 255);
+    break;
+case 239:
+    color = new Color(0, 0, 0, 255);
+    break;
+case 240:
+    color = new Color(0, 0, 0, 255);
+    break;
+case 241:
+    color = new Color(0, 0, 0, 255);
+    break;
+case 242:
+    color = new Color(0, 0, 0, 255);
+    break;
+case 243:
+    color = new Color(0, 0, 0, 255);
+    break;
+case 244:
+    color = new Color(0, 0, 0, 255);
+    break;
+case 245:
+    color = new Color(0, 0, 0, 255);
+    break;
+case 246:
+    color = new Color(0, 0, 0, 255);
+    break;
+case 247:
+    color = new Color(0, 0, 0, 255);
+    break;
+case 248:
+    color = new Color(0, 0, 0, 255);
+    break;
+case 249:
+    color = new Color(0, 0, 0, 255);
+    break;
+case 250:
+    color = new Color(0, 0, 0, 255);
+    break;
+case 251:
+    color = new Color(0, 0, 0, 255);
+    break;
+case 252:
+    color = new Color(0, 0, 0, 255);
+    break;
+case 253:
+    color = new Color(0, 0, 0, 255);
+    break;
+case 254:
+    color = new Color(0, 0, 0, 255);
+    break;
+case 255:
+    color = new Color(0, 0, 0, 255);
+    break;
+default:
+    color = new Color(0, 0, 0, 255);
+    break;
+}

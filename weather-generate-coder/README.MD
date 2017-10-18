@@ -118,7 +118,7 @@ March 102 云图调色板-18： 可能无关痛痒的文字说明
     G: 绿色
     B：蓝色
 ```
-经各种途径搜索，在[MiFun](http://www.micaps.cn/MiFun/main)这个网站找到了相关气象的中国人民，抓住机会了解过后，我这个理解差不多对，但是从二进制到.pal文件的映射关系也没人知道。就此作罢，只能靠无限的想象力了。
+经各种途径搜索，在[MiFun](http://www.micaps.cn/MiFun/main)这个网站找到了相关气象的中国人民，抓住机会了解过后，我这个理解差不多对，但是从二进制到.pal文件的映射关系因渲染文件的不同而不同。就此作罢，只能靠无限的想象力了。
 ## Coding
 因为已经有渲染文件了，那么接下来的事情就是将前面的那团糟糕的if-else替换成标准值即可，同样有中央气象台的数据作为结果参照，那接下来的问题就是用这份pal文件组合出一份可以渲染成和中央气象台发布的图像一致的图片就ok了，要生成这么多的if-else不合理，改用switch-case结构，可是代码量不会变，对于我这种懒人来说怎么可能一行一行的写呢，所以想到了以前学过的代码生成器，环境本机没有，正好自己有阿里云，上面Python环境自带，还有装逼利器VIM,
 ![vim](./img/vim.png)
@@ -145,13 +145,55 @@ for i in range(1,len(sys.argv)):
     print('process '+ pal_name+' finished...')
 
 ```
-在这里面用到了itertools的islice用来跳过第一行，提高执行效率，还用到了脚本参数sys.argv,当然存在bug，这个脚本只是在完美情况下运行的样子，但生成的代码是没有bug的。弄完之后将生成的代码copy到java代码中，看看中红外的运行情况
+在这里面用到了itertools的islice用来跳过第一行，提高执行效率，还用到了脚本参数sys.argv,当然存在bug，这个脚本只是在完美情况下运行的样子，但生成的代码是没有bug的。弄完之后将生成的代码copy到java代码中，看看中红外的运行情况：
+生成的代码大致如下：
+```java
+switch(value) {
+	case 0:
+	    color = new Color(9, 9, 9, 255);
+	    break;
+	case 1:
+	    color = new Color(50, 98, 243, 255);
+	    break;
+	case 2:
+	    color = new Color(50, 98, 243, 255);
+	    break;
+	case 3:
+	    color = new Color(50, 98, 243, 255);
+	    break;
+	// ......
+	case 254:
+		color = new Color(96, 98, 243, 255);
+	    break;
+	case 255:
+		color = new Color(97, 98, 243, 255);
+	    break;
+	default:
+	    color = new Color(98, 98, 243, 255);
+	    break;
+}
+
+```
 ![代码生成器生成的效果](./img/w2.png)
 <center>代码生成器生成的效果</center>
 
-![客户提供的效果图](./img/W1201709291600.png)
+![客户提供的效果图](./img/W2201709291600.png)
 <center>客户提供</center>
 
 经过不断调试组合，终于完成了三种图的代码生成器；代码基本一致，就是调整了代码中row[number]的顺序。
+## “剑归宗万”看效果
+![w1](./img/w1.png)
+![w1](./img/w1-cctv.jpg)
+<center>彩色卫星云图</center>
 
+![w2](./img/w2.png)
+![w2](./img/W2201709291600.png)
+<center>分裂窗图像</center>
 
+![w3](./img/W3201710170800.png)
+![w3](./img/w3-cctv.jpg)
+<center>水汽图像</center>
+
+![w4](./img/W4201710170800.png)
+![w4](./img/w4-cctv.BMP)
+<center>中红外图像</center>

@@ -180,7 +180,7 @@ switch(value) {
 ![客户提供的效果图](./img/W2201709291600.png)
 <center>客户提供</center>
 
-经过不断调试组合，终于完成了三种图的代码生成器；代码基本一致，就是调整了代码中row[number]的顺序。
+经过不断调试组合，终于完成了三种图的代码生成器；代码基本一致，就是调整了代码中row[number]的顺序。效果有差距，但重点是代码生成器，图片只是来消遣的。
 ## “剑归宗万”看效果
 ![w1](./img/w1.png)
 ![w1](./img/w1-cctv.jpg)
@@ -197,3 +197,8 @@ switch(value) {
 ![w4](./img/W4201710170800.png)
 ![w4](./img/w4-cctv.BMP)
 <center>中红外图像</center>
+
+## 参考网址
+http://www.nmc.cn/publish/satellite/mainland_China_region.html
+http://www.micaps.cn/MiFun/main
+https://docs.python.org/2/library/itertools.html
